@@ -92,6 +92,7 @@ z4h bindkey z4h-cd-down    Shift+Down   # cd into a child directory
 autoload -Uz zmv
 
 # Define functions and completions.
+[[ ! -v functions[command_not_found_handler] ]] || unfunction command_not_found_handler
 
 # Define named directories: ~w <=> Windows home directory on WSL.
 [[ -z $z4h_win_home ]] || hash -d w=$z4h_win_home
@@ -103,6 +104,3 @@ alias vim=nvim
 # Set shell options: http://zsh.sourceforge.net/Doc/Release/Options.html.
 setopt glob_dots     # no special treatment for file names with a leading dot
 setopt no_auto_menu  # require an extra TAB press to open the completion menu
-
-# Unfunction
-[[ ! -v functions[command_not_found_handler] ]] || unfunction command_not_found_handler
