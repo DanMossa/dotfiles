@@ -40,3 +40,9 @@ function getfbtoken () {
     echo "Token copied to your clipboard."
     FB_TOKEN=$(echo $token | jq -r .idToken | tr -d '[:space:]')
 }
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/dmossaband/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/dmossaband/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/dmossaband/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/dmossaband/google-cloud-sdk/completion.zsh.inc'; fi
