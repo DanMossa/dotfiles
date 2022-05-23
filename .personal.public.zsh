@@ -1,5 +1,4 @@
 # Extend PATH.
-path=(~/bin $path)
 path=(~/Library/Android/sdk/platform-tools $path)
 path=(~/flutter/bin $path)
 path=(~/flutter/.pub-cache/bin $path)

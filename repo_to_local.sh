@@ -23,10 +23,4 @@ select pw in "Personal" "Work"; do
     esac
 done
 
-echo "Run `exec zsh` now?"
-select yn in "Yes" "No"; do
-    case $yn in
-        Yes ) exec zsh; break;;
-        No ) break;;
-    esac
-done
+exec zsh
