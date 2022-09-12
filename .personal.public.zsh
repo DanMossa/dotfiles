@@ -4,7 +4,6 @@ path=(~/flutter/bin $path)
 path=(~/flutter/.pub-cache/bin $path)
 path=(~/.pub-cache/bin $path)
 path=(~/.volta/bin $path)
-path=(~/.jenv/bin $path)
 
 # Export environment variables.
 export JAVA_HOME=$(/usr/libexec/java_home)
