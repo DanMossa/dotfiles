@@ -26,13 +26,6 @@
     "enabled_in_text_threads": false
   },
   "context_servers": {
-    "cloudflare": {
-      "source": "custom",
-      "enabled": true,
-      "command": "npx",
-      "args": ["-y", "mcp-remote", "https://browser.mcp.cloudflare.com/sse"],
-      "env": {}
-    },
     "Astro docs": {
       "source": "custom",
       "enabled": true,
@@ -41,7 +34,7 @@
       "env": {}
     }
   },
-  "icon_theme": "JetBrains New UI Icons (Light)",
+  "icon_theme": "JetBrains Icons Dark",
   "telemetry": {
     "diagnostics": false,
     "metrics": false
@@ -76,5 +69,8 @@
   "project_panel": {
     "auto_fold_dirs": false
   },
-  "autosave": "on_focus_change"
+  "autosave": "on_focus_change",
+  "terminal": {
+    "font_family": "MesloLGS NF"
+  }
 }
