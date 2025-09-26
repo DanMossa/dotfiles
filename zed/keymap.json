@@ -9,7 +9,14 @@
   {
     "context": "Workspace",
     "bindings": {
-      "shift shift": "file_finder::Toggle"
+      "shift shift": "file_finder::Toggle",
+      "alt-9": [
+        "task::Spawn",
+        {
+          "task_name": "tv git diff",
+          "reveal_target": "center"
+        }
+      ]
     }
   },
   {
@@ -21,21 +28,28 @@
   {
     "context": "Editor",
     "bindings": {
-      "ctrl-cmd-l": "editor::Format",
-      "shift-cmd-f": [
-        "task::Spawn",
-        {
-          "task_name": "Find in Files",
-          "reveal_target": "center"
-        }
-      ],
-      "alt-9": [
-        "task::Spawn",
-        {
-          "task_name": "tv git diff",
-          "reveal_target": "center"
-        }
-      ]
+      "alt-cmd-l": "editor::Format",
+      "ctrl-cmd-l": ["task::Spawn", { "task_name": "Beautify file" }],
+      // "shift-cmd-f": [
+      //   "task::Spawn",
+      //   {
+      //     "task_name": "Find in Files",
+      //     "reveal_target": "center"
+      //   }
+      // ],
+
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-right": "editor::MoveToNextSubwordEnd"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-shift-right": "editor::SelectToNextSubwordEnd"
     }
   }
 ]
