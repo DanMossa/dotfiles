@@ -29,7 +29,7 @@
     "context": "Editor",
     "bindings": {
       "alt-cmd-l": "editor::Format",
-      "ctrl-cmd-l": ["task::Spawn", { "task_name": "Beautify file" }],
+      "ctrl-cmd-l": ["task::Spawn", { "task_name": "Beautify file" }]
       // "shift-cmd-f": [
       //   "task::Spawn",
       //   {
@@ -37,19 +37,20 @@
       //     "reveal_target": "center"
       //   }
       // ],
-
     }
   },
   {
     "context": "Editor",
     "bindings": {
-      "alt-right": "editor::MoveToNextSubwordEnd"
+      "alt-right": "editor::MoveToNextSubwordEnd",
+      "alt-left": "editor::MoveToPreviousSubwordStart"
     }
   },
   {
     "context": "Editor",
     "bindings": {
-      "alt-shift-right": "editor::SelectToNextSubwordEnd"
+      "alt-shift-right": "editor::SelectToNextSubwordEnd",
+      "alt-shift-left": "editor::SelectToPreviousWordStart"
     }
   }
 ]
